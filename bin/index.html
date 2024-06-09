@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information about the document -->
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
+    <title>Rock-Paper-Scissors with Elements</title> <!-- Title of the web page -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS stylesheet -->
+</head>
+<body>
+    <div id="game-container">
+        <h1>Rock Paper Scissor: Fire Water Earth Air Lightning</h1>
+
+        <!-- Section containing the choice buttons -->
+        <div id="choices">
+            <!-- Buttons for each choice with data attributes and tooltips -->
+            <button class="choice" data-choice="rock" title="beats scissors, fire, and earth">Rock</button> 
+            <button class="choice" data-choice="paper"title="beats rock, water, and air">Paper</button>
+            <button class="choice" data-choice="scissors"title="beats paper, air, and lightning">Scissors</button>
+            <button class="choice" data-choice="fire"title="beats paper, air, and earth">Fire</button>
+            <button class="choice" data-choice="water"title="beats fire, rock, and lightning">Water</button>
+            <button class="choice" data-choice="earth"title="beats lightning, water, and scissors">Earth</button>
+            <button class="choice" data-choice="air"title="beats earth, fire, and rock">Air</button>
+            <button class="choice" data-choice="lightning"title="beats water, air, and scissor">Lightning</button>
+        </div>
+
+        <!-- Section to display the result of the game -->
+        <div id="result">
+            <p id="player-choice">Your choice: </p> <!-- Display the player's choice -->
+            <p id="computer-choice">Computer's choice: </p> <!-- Display the computer's choice -->
+            <p id="game-result"></p> <!-- Display the result of the game (win, lose, draw) -->
+        </div>
+
+        <!-- Scoreboard to keep track of user and computer scores -->
+        <div id="scoreboard">
+            <p id="user-score">User Score: 0</p> <!-- Display the user's score -->
+            <p id="computer-score">Computer Score: 0</p> <!-- Display the computer's score -->
+        </div>
+
+<!-- Button to play the game again -->
+        <button id="play-again" style="display: none;">Play Again</button> <!-- Hidden initially, shown after a game round -->
+
+        <!-- Button to reset the scores -->
+        <button id="reset-score">Reset Score</button> <!-- Button to reset the user and computer scores -->
+    </div>
+
+    <!-- Section to toggle between light and dark mode -->
+    <body class="light">
+    <p></p>
+        <button onclick="toDark()">switch to dark</button> <!-- Button to switch to dark mode -->
+        <button onclick="toLight()">switch to light</button> <!-- Button to switch to light mode -->
+    </body>
+    <script src="script.js"></script> <!-- Link to the external JavaScript file -->
+</body>
+
+</html>

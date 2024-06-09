@@ -1,0 +1,125 @@
+/* Define CSS variables for colors */
+:root {
+    --main-color:#ffffff;
+    --main-gray: #D3D3D3 ;
+}
+
+/* General styles for the body element */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--main-gray);
+}
+
+/* Styles for the game container */
+#game-container {
+    text-align: center;
+    background-color: var(--main-color);
+    padding: 20px;
+    border: 1px solid var(--main-gray);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the main heading */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Styles for the choices section */
+#choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Styles for each choice button */
+.choice {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid var(--main-gray);
+    border-radius: 5px;
+    background-color: var(--main-gray);
+    transition: background-color 0.3s;
+}
+
+/* Styles for the scoreboard section */
+#scoreboard {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+}
+
+/* Styles for choice buttons on hover */
+.choice:hover {
+    background-color: #A9A9A9;
+}
+
+/* Styles for the result section */
+#result {
+    margin-top: 20px;
+}
+
+/* Styles for the play again button */
+#play-again {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid var(--main-gray);
+    border-radius: 5px;
+    background-color: var(--main-gray);
+    transition: background-color 0.3s;
+}
+
+/* Styles for the reset score button */
+#reset-score {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid var(--main-gray);
+    border-radius: 5px;
+    background-color: var(--main-gray);
+    transition: background-color 0.3s;
+}
+
+/* Styles for the reset score button on hover */
+#reset-score:hover {
+    background-color: var(--main-color);
+}
+
+/* Light mode styles */
+.light {
+    --font-color: #111;
+    --main-color: #ffffff;
+}
+
+/* Dark mode styles */
+.dark {
+    --font-color: #eee;
+    --main-color: #111;
+}
+
+/* Text color for paragraphs and headings based on current mode */
+p, h1 {
+    color: var(--font-color);
+}
+
+/* Background color for body based on current mode */
+body {
+    background-color: var(--main-color);
+}
+
+/* Styles for the play again button on hover */
+#play-again:hover {
+    background-color: var(--main-color);
+}
